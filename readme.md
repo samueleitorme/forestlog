@@ -1,32 +1,30 @@
 # Forest Log
+> <p style="color:#ff6700; font-weight:600;">ATENCIÓN: Este proyecto sigue en desarrollo.</p>
 
 ![Forest Log respository cover](media/forestlog-cover.png)
+
+Es una aplicación simple, creada con flask, plantillas y una base de datos SQLite. Respecto a la funcionalidad, puedes consultar el historial de registros y añadir nuevos registros.
+
 
 
 ## Instalación 
 
 1. Clona el respositorio. 
+   ```bash
+   git clone https://github.com/samueleitorme/forestlog.git
+   ```
 2. Instala las dependencias.
 
    ```python
-   pip -r requitements.txt
+   pip -r forestlog/requitements.txt
    ```
-3. Prueba la aplicación 
-
-
----
-
-# Tempo | Registro del tiempo
-
-Descripcion
+3. Ejecuta la aplicación.
+   ```bash
+   python forestlog/app/app.py
+   ```
 
 ## Funcionalidades
 
-- **Registro de Datos**: Los guardabosques pueden registrar datos relacionados con la temperatura, velocidad del viento, tiempo, personas ayudadas y el nombre del reportero.
+- **Registro de datos**: Los guardabosques pueden registrar datos relacionados con la temperatura, velocidad del viento, tiempo, excursionistas ayudados y el nombre del guarda.
 
-- **Visualización de Registros**: La aplicación muestra todos los registros en una lista, lo que facilita la consulta de los datos previamente registrados.
-
-## Requisitos
-
-Antes de ejecutar la aplicación, asegúrate de tener instalado Python y las dependencias requeridas. Puedes instalar las dependencias usando `pip`:
-
+- **Historial de registros**: La aplicación muestra todos los registros en una tabla, lo que facilita la consulta de los datos previamente registrados.

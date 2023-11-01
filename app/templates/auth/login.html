@@ -9,7 +9,16 @@ sesión{%endblock title %} {% block style%}
   <form action="" method="post">
     <h1>Iniciar sesión</h1>
     <div class="input-box">
-      <input type="text" name="username" id="usuario" placeholder="Usuario" />
+      <input 
+      type="text" 
+      name="username" 
+      id="usuario" 
+      placeholder="Usuario" 
+      min="4" 
+      max="25"
+      pattern="[a-z]+" 
+      required
+      title="Nombre de usuario"/>
       <i class="bx bxs-user"></i>
     </div>
     <div class="input-box">
@@ -18,6 +27,10 @@ sesión{%endblock title %} {% block style%}
         name="password"
         id="contrasenia"
         placeholder="Contraseña"
+        min="8"
+        max="32"
+        required
+        title="Contraseña"
       />
       <i class="bx bxs-lock-alt"></i>
     </div>

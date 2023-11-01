@@ -1,6 +1,6 @@
 # Forest Log
 
-![Forest Log respository cover](media/cover-repo.png)
+![Forest Log respository cover](media/forestlog-cover.png)
 
 
 ## Instalación 

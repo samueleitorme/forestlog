@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Tempo | Registro{% endblock title %}
+{% block content %}
+<form method="post">
+   <h1>Registro del tiempo</h1>
+   <label for="fecha">Fecha:</label>
+   <input type="date" name="date" id="fecha" value="{{datos[0]}}" disabled required>
+
+   <label for="hora">Hora:</label>
+   <input type="time" name="time" id="hora" value="" disabled required>
+
+   <label for="temperatura">Temperatura (ºC)</label>
+   <input type="number" name="temperature" id="temperatura" step="0.1" required placeholder="Temperatura en Celsius">
+
+   <label for="viento">Velociad del viento (m/s)</label>
+   <input type="number" name="wind-speed" id="viento" required placeholder="Velocidad del viento en m/s">
+
+   <label for="tiempo">Condición climática</label required>
+   <select name="weather" id="tiempo">
+      <option value="cloud">☁️Nublado</option>
+      <option value="mist">⛅Neblina</option>
+      <option value="clear">🌤️Despejado</option>
+      <option value="wind">🌬️Viento</option>
+      <option value="rain">🌧️Lluvia</option>
+      <option value="heat-wave">🌡️Ola de calor</option>
+      <option value="blizzard">❄️Tormenta de nieve</option>
+      <option value="thunderstorm">⛈️Tormenta eléctrica</option>
+   </select>
+
+   <label for="asistencias">Número de excursionistas asistidos</label>
+   <input type="number" name="hikers" id="asistencias" required placeholder="Numero de excursionistas asistidos">
+
+   <label for="nombre">Nombre:</label>
+   <input type="text" name="name" id="nombre" required placeholder="Tu nombre"/>
+</form>
+
+   {% endblock content %}

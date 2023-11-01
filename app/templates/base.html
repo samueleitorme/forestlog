@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css')}}"
+    />
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+      {% block style %}{% endblock style %}
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <nav>
+          <p>
+            <strong>Tempo</strong>
+          </p>
+          <a href="{{url_for('registrar')}}"> Registro</a>
+        </nav>
+      </header>
+      <article>{% block content %} {% endblock content %}</article>
+      <footer>
+        <p>Hecho por: <a href="samueleitor.me/github">@samueleitorme</a>.</p>
+      </footer>
+    </main>
+  </body>
+</html>

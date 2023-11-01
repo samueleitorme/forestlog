@@ -1,5 +1,5 @@
 # Forest Log
-> <p style="color:#ff6700; font-weight:600;">ATENCIÓN: Este proyecto sigue en desarrollo.</p>
+> **ATENCIÓN: Este proyecto sigue en desarrollo.**
 
 ![Forest Log respository cover](media/forestlog-cover.png)
 

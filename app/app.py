@@ -9,13 +9,15 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/registrar/')
-def registrar():
-    fecha = datetime.datetime.now().date
-    print(fecha)
-    hora = datetime.datetime.now().time
-    print(hora)
-    return render_template('registrar.html', datos=(fecha,hora))
+@app.route('/login/')
+def login():
+    return render_template('auth/login.html')
+
+@app.route('/register/')
+def register():
+    return render_template('auth/register.html')
+
+
 
 # Eror 404
 @app.errorhandler(404)

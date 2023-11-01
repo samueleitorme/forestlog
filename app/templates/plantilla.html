@@ -3,30 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}" type="image/x-icon">
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css')}}"
     />
     <title>{% block title %}{% endblock title %}</title>
-    <style>
       {% block style %}{% endblock style %}
-    </style>
   </head>
 
   <body>
-    <main class="container">
-      <header>
-        <nav>
-          <p>
-            <strong>Tempo</strong>
-          </p>
-          <a href="{{url_for('registrar')}}"> Registro</a>
-        </nav>
-      </header>
-      <article>{% block content %} {% endblock content %}</article>
+    <!-- Nav -->
+    
+    <!-- Main -->
+      <main>
+        {% block content %} {% endblock content %}
+      </main>
+      <!-- Footer -->
+      {% block footer %}
       <footer>
-        <p>Hecho por: <a href="samueleitor.me/github">@samueleitorme</a>.</p>
-      </footer>
+        
+        <footer>
+      {% endblock footer %}
     </main>
   </body>
 </html>

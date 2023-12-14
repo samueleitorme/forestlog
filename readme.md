@@ -1,5 +1,6 @@
 # Forest Log
-> **ATENCIÓN: Este proyecto sigue en desarrollo.**
+> [!IMPORTANT]
+> Este proyecto sigue en desarrollo.
 
 ![Forest Log respository cover](media/forestlog-cover.png)
 
